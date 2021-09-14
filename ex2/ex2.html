@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Verificador de Idade
+    </header>
+    <section>
+    <div id="ano">
+        Ano de Nascimento: &nbsp;<input type = "number" min="1900" max="2021" id="anonascimento" name="anonascimento">
+    </div>
+    <div id="sexo">
+        Sexo: <input type="radio" id="masculino" name="genero" value="masculino" checked>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <!-- Obs: radios tem que ter o mesmo name-->
+    </div>
+    <div id="verificar">
+        <input type="button" id="verificar" name="verificar" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="resultado">
+        Preencha os dados acima para ver o resultado!
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
